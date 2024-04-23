@@ -1,0 +1,13 @@
+component 
+--------------
+producer
+consumer
+broker(msg server)
+cluster 
+topic 
+partition 
+offset
+consumer group 
+zookeper 
+
+

@@ -1,0 +1,20 @@
+windows
+----------- 
+1) start zookeeper 
+$ zookeeper-server-start.bat zookeeper.properties 
+	default poer 2181 
+
+2) start kafka server 
+$ kafka-server-start.bat server.properties 
+	default port 9092
+
+3) create topic 
+$ kafka.topics.bat --create --bootstrap-server localhost:9092 --topic <topicName>
+
+4) connect to producer by pointing to the topic 
+$ kafka-console-producer.bat --broker-list localhost:9092 --topic <topicName> 
+ -> send msg 
+
+5) connect to consumer to cosume data 
+$ kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic <topicName> --from-beginning  
+
